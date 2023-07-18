@@ -12,9 +12,33 @@
                 text-align: center;
             }
         </style>
+        <script>
+            function Hello() {
+                alert("Hello from Vincent!")
+            }
+            function Add(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let sum = x+y;
+                alert(sum)
+            }
+        </script>
     </head>
     <body>
         <h1>Vincent Nlam's progamming exercises</h1>
-       
+        <p>
+            <button type="button" onclick="alert('Hello from Vincent')">Click Me!</button>
+            <button type="button" onclick="Hello()">Click Me!</button>
+            <button type="button" onclick="Add()">Add</button>
+        </p>
+        <p>
+            <label for="x">x:</label>
+            <input type="text" id="x" name="x">
+            <label for="y">y:</label>
+            <input type="text" id="y" name="y">
+        </p>
+        <p><a href="index.html">Home</a></p>
     </body>
 </html>
