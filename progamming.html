@@ -21,8 +21,16 @@
                 x = Number(a)
                 let b = document.getElementById("y").value;
                 y = Number(b)
-                let sum = x+y;
-                alert(sum)
+                let result = x+y;
+                alert(result)
+            }
+            function Subtract(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x-y;
+                alert(result)
             }
         </script>
     </head>
@@ -32,6 +40,7 @@
             <button type="button" onclick="alert('Hello from Vincent')">Click Me!</button>
             <button type="button" onclick="Hello()">Click Me!</button>
             <button type="button" onclick="Add()">Add</button>
+            <button type="button" onclick="Subtract()">Subtract</button>
         </p>
         <p>
             <label for="x">x:</label>
