@@ -2,19 +2,19 @@
     <head>
         <title>Vincent Nlam's progamming exercises</title>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+            @import url('@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');');
             body {
                 font-family: 'VT323', monospace;
-                background-color: rgb(187, 209, 223);
+                background-color: rgb(90, 145, 190)
             }
             h1 {
-                color:rgb(219, 135, 24);
+                color:rgb(248, 202, 202);
                 text-align: center;
             }
         </style>
         <script>
             function Hello() {
-                alert("Hello from Vincent!")
+                alert("This is a calculator made by Vincent")
             }
             function Add(){
                 let a = document.getElementById("x").value;
@@ -32,15 +32,43 @@
                 let result = x-y;
                 alert(result)
             }
+            function Divide(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x/y;
+                alert(result)
+            }
+            function Multiply(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x*y;
+                alert(result)
+            }
+            function Exponent(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x^y;
+                alert(result)
+            }
+        
         </script>
     </head>
     <body>
         <h1>Vincent Nlam's progamming exercises</h1>
         <p>
-            <button type="button" onclick="alert('Hello from Vincent')">Click Me!</button>
-            <button type="button" onclick="Hello()">Click Me!</button>
+            <button type="button" onclick="alert('My name is Vincent')">Click Me!</button>
+            <button type="button" onclick="Hello()">About:</button>
             <button type="button" onclick="Add()">Add</button>
             <button type="button" onclick="Subtract()">Subtract</button>
+            <button type="button" onclick="Divide()">Divide</button>
+            <button type="button" onclick="Multiply()">Multiply</button>
+            <button type="button" onclick="Exponent()">Exponent</button>
         </p>
         <p>
             <label for="x">x:</label>
