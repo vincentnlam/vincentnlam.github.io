@@ -22,7 +22,7 @@
                 let b = document.getElementById("y").value;
                 y = Number(b)
                 let result = x+y;
-                alert(result)
+                document.getElementById("result").innerHTML=result;
             }
             function Subtract(){
                 let a = document.getElementById("x").value;
@@ -30,7 +30,7 @@
                 let b = document.getElementById("y").value;
                 y = Number(b)
                 let result = x-y;
-                alert(result)
+                document.getElementById("result").innerHTML=result;
             }
             function Divide(){
                 let a = document.getElementById("x").value;
@@ -38,7 +38,7 @@
                 let b = document.getElementById("y").value;
                 y = Number(b)
                 let result = x/y;
-                alert(result)
+                document.getElementById("result").innerHTML=result;
             }
             function Multiply(){
                 let a = document.getElementById("x").value;
@@ -46,15 +46,15 @@
                 let b = document.getElementById("y").value;
                 y = Number(b)
                 let result = x*y;
-                alert(result)
+                document.getElementById("result").innerHTML=result;
             }
             function Power(){
                 let a = document.getElementById("x").value;
                 x = Number(a)
                 let b = document.getElementById("y").value;
                 y = Number(b)
-                let result = x^y;
-                alert(result)
+                let result = x**y;
+                document.getElementById("result").innerHTML=result;
             }
         
         </script>
@@ -75,6 +75,11 @@
             <input type="text" id="x" name="x">
             <label for="y">y:</label>
             <input type="text" id="y" name="y">
+        </p>
+        <p>
+            result: <div id="result">
+                
+            </div>
         </p>
         <p><a href="index.html">Home</a></p>
     </body>
