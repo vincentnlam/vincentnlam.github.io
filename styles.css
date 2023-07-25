@@ -7,6 +7,9 @@ h1 {
     color:rgb(248, 202, 202);
     text-align: center;
 }
+p {
+    color:aquamarine
+}
 .nav {
     border: 2px solid red;
     border-radius: 12px;
