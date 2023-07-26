@@ -2,11 +2,11 @@
 body {
     font-family: 'VT323', monospace;
     background-color: rgb(9, 53, 102)
-}
-h1 {
-    color:aquamarine;
-    text-align: center;
-}
+  }
+  h1 {
+      color:aquamarine;
+      text-align: center;
+  }
 p {
     color:aquamarine
 }
@@ -16,6 +16,9 @@ p {
     padding: 5px;
     color:rgb(255, 255, 255);
 }
+div{
+  color:aquamarine
+  }
 /* unvisited link */
 a:link {
     color: red;
@@ -34,4 +37,6 @@ a:link {
   /* selected link */
   a:active {
     color: blue;
-  }
+
+
+  
