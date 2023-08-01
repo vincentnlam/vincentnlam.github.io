@@ -1,42 +1,39 @@
-@import url('@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');');
 body {
-    font-family: 'VT323', monospace;
-    background-color: rgb(9, 53, 102)
-  }
-  h1 {
-      color:aquamarine;
-      text-align: center;
-  }
+  font-family: monospace;
+  background-color: rgb(9, 53, 102)
+}
+h1 {
+  color:aquamarine;
+  text-align: center;
+}
 p {
-    color:aquamarine
+  color:aquamarine
 }
 .nav {
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 12px;
-    padding: 5px;
-    color:rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 5px;
+  color:rgb(255, 255, 255);
 }
 div{
   color:aquamarine
-  }
+}
 /* unvisited link */
 a:link {
-    color: red;
-  }
+  color: red;
+}
   
-  /* visited link */
-  a:visited {
-    color: rgb(177, 236, 233);
-  }
+/* visited link */
+a:visited {
+  color: rgb(177, 236, 233);
+}
   
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
+/* mouse over link */
+a:hover {
+  color: rgb(255, 0, 128);
+}
 
-
-  
+/* selected link */
+a:active {
+  color: rgb(255, 115, 0);
+}
