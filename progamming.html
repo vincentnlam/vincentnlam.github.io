@@ -46,7 +46,30 @@
                 let result = x**y;
                 document.getElementById("result").innerHTML=result;
             }
-        
+            function PrintNumbers(){
+                let output = ""
+                for (let i=0; i<=10; i++) {
+                    output += i + "<br/>"
+                }
+                document.getElementById("Test_Loop").innerHTML=output;    
+            }
+            function PrintStars(){
+                let output = ""
+                for (let i=0; i<=10; i++) {
+                    output += "*" + "<br/>"
+                }
+                document.getElementById("Test_Loop").innerHTML=output;    
+            }
+            function PrintRectangle(){
+                let output = ""
+                for (let i=0; i<=9; i++) {
+                    for (let j=0; j<=14; j++) {
+                        output  +=  "*"
+                    }
+                    output += "<br/>"       
+                }
+                document.getElementById("Test_Loop").innerHTML=output;    
+            }
         </script>
     </head>
     <body>
@@ -62,7 +85,7 @@
             <button type="button" onclick="Subtract()">Subtract</button>
             <button type="button" onclick="Divide()">Divide</button>
             <button type="button" onclick="Multiply()">Multiply</button>
-            <button type="button" onclick="Power()">Power</button>
+            <button type="button" onclsick="Power()">Power</button>
         </p>
         <p>
             <label for="x">x:</label>
@@ -74,6 +97,14 @@
             result: <div id="result">
                 
             </div>
+        </p>
+        <p>
+            <button type="button" onclick="PrintNumbers()">PrintNumbers</button>
+            <button type="button" onclick="PrintStars()">PrintStars</button>
+            <button type="button" onclick="PrintRectangle()">PrintRectangle</button>
+        </p>
+        <p>
+            <div id="Test_Loop"></div>
         </p>
     </body>
 </html>
