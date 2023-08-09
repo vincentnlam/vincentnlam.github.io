@@ -40,7 +40,7 @@
             function PrintTriangle2(){
                 let output = ""
                 for (let i=0; i<=4; i++) {
-                    for (let j=0; j<=i; j++) {
+                    for (let j=i; j<=4; j++) {
                         output +=  "*"
                     }
                     output += "<br/>"       
@@ -52,6 +52,16 @@
                 let i = 0
                 while (i<=5) {
                     output += i
+                    output += "<br/>" 
+                    i++
+                }
+                document.getElementById("Test_Loop").innerHTML=output;    
+            }
+            function PrintStarsWithWhile(){
+                let output = ""
+                let i = 0
+                while (i<=5) {
+                    output += "*"
                     output += "<br/>" 
                     i++
                 }
@@ -73,6 +83,7 @@
             <button type="button" onclick="PrintTriangle()">PrintTriangle</button>
             <button type="button" onclick="PrintTriangle2()">PrintTriangle2</button>
             <button type="button" onclick="PrintNumbersWithWhile()">PrintNumbersWithWhile</button>
+            <button type="button" onclick="PrintStarsWithWhile()">PrintStarsWithWhile</button>
         </p>
         <p>
             <div id="Test_Loop"></div>
