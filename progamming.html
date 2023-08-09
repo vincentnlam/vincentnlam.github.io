@@ -67,6 +67,17 @@
                 }
                 document.getElementById("Test_Loop").innerHTML=output;    
             }
+            function PrintIandJ(){
+                let output = ""
+                for (let i=5; i>=0; i--) {
+                    for (let j=5; j>=0; j--){
+                        output += "i="+ i + "; j= " + j
+                        output += "<br/>---------<br/>" 
+                    }
+                          
+                }
+                document.getElementById("Test_Loop").innerHTML=output;  
+            }
         </script>
     </head>
     <body>
@@ -84,6 +95,7 @@
             <button type="button" onclick="PrintTriangle2()">PrintTriangle2</button>
             <button type="button" onclick="PrintNumbersWithWhile()">PrintNumbersWithWhile</button>
             <button type="button" onclick="PrintStarsWithWhile()">PrintStarsWithWhile</button>
+            <button type="button" onclick="PrintIandJ()">PrintIandJ</button>
         </p>
         <p>
             <div id="Test_Loop"></div>
