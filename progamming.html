@@ -3,49 +3,6 @@
         <title>Vincent Nlam's progamming exercises</title>
         <link rel="stylesheet" href="styles.css">
         <script>
-            function Hello() {
-                alert("This is a calculator made by Vincent")
-            }
-            function Add(){
-                let a = document.getElementById("x").value;
-                x = Number(a)
-                let b = document.getElementById("y").value;
-                y = Number(b)
-                let result = x+y;
-                document.getElementById("result").innerHTML=result;
-            }
-            function Subtract(){
-                let a = document.getElementById("x").value;
-                x = Number(a)
-                let b = document.getElementById("y").value;
-                y = Number(b)
-                let result = x-y;
-                document.getElementById("result").innerHTML=result;
-            }
-            function Divide(){
-                let a = document.getElementById("x").value;
-                x = Number(a)
-                let b = document.getElementById("y").value;
-                y = Number(b)
-                let result = x/y;
-                document.getElementById("result").innerHTML=result;
-            }
-            function Multiply(){
-                let a = document.getElementById("x").value;
-                x = Number(a)
-                let b = document.getElementById("y").value;
-                y = Number(b)
-                let result = x*y;
-                document.getElementById("result").innerHTML=result;
-            }
-            function Power(){
-                let a = document.getElementById("x").value;
-                x = Number(a)
-                let b = document.getElementById("y").value;
-                y = Number(b)
-                let result = x**y;
-                document.getElementById("result").innerHTML=result;
-            }
             function PrintNumbers(){
                 let output = ""
                 for (let i=0; i<=10; i++) {
@@ -72,7 +29,7 @@
             }
             function PrintTriangle(){
                 let output = ""
-                for (let i=0; i<=20; i++) {
+                for (let i=0; i<=4; i++) {
                     for (let j=0; j<=i; j++) {
                         output  +=  "*"
                     }
@@ -82,11 +39,21 @@
             }
             function PrintTriangle2(){
                 let output = ""
-                for (let i=0; i<=20; i++) {
+                for (let i=0; i<=4; i++) {
                     for (let j=0; j<=i; j++) {
-                        output  +=  "*"
+                        output +=  "*"
                     }
                     output += "<br/>"       
+                }
+                document.getElementById("Test_Loop").innerHTML=output;    
+            }
+            function PrintNumbersWithWhile(){
+                let output = ""
+                let i = 0
+                while (i<=5) {
+                    output += i
+                    output += "<br/>" 
+                    i++
                 }
                 document.getElementById("Test_Loop").innerHTML=output;    
             }
@@ -96,27 +63,8 @@
         <h1>Vincent Nlam's progamming exercises</h1>
         <p class="nav">
             <a href="index.html">Home</a>|
-            <a href="progamming.html">Calculator</a>
-        </p>
-        <p>
-            <button type="button" onclick="alert('My progamming exercise')">Click Me!</button>
-            <button type="button" onclick="Hello()">About:</button>
-            <button type="button" onclick="Add()">Add</button>
-            <button type="button" onclick="Subtract()">Subtract</button>
-            <button type="button" onclick="Divide()">Divide</button>
-            <button type="button" onclick="Multiply()">Multiply</button>
-            <button type="button" onclsick="Power()">Power</button>
-        </p>
-        <p>
-            <label for="x">x:</label>
-            <input type="text" id="x" name="x">
-            <label for="y">y:</label>
-            <input type="text" id="y" name="y">
-        </p>
-        <p>
-            result: <div id="result">
-                
-            </div>
+            <a href="calculator.html">Calculator</a>|
+            <a href="progamming.html">Programming</a>|
         </p>
         <p>
             <button type="button" onclick="PrintNumbers()">PrintNumbers</button>
@@ -124,6 +72,7 @@
             <button type="button" onclick="PrintRectangle()">PrintRectangle</button>
             <button type="button" onclick="PrintTriangle()">PrintTriangle</button>
             <button type="button" onclick="PrintTriangle2()">PrintTriangle2</button>
+            <button type="button" onclick="PrintNumbersWithWhile()">PrintNumbersWithWhile</button>
         </p>
         <p>
             <div id="Test_Loop"></div>

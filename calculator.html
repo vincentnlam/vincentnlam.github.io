@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Vincent Nlam's progamming exercises</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function Add(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x+y;
+                document.getElementById("result").innerHTML=result;
+            }
+            function Subtract(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x-y;
+                document.getElementById("result").innerHTML=result;
+            }
+            function Divide(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x/y;
+                document.getElementById("result").innerHTML=result;
+            }
+            function Multiply(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x*y;
+                document.getElementById("result").innerHTML=result;
+            }
+            function Power(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = x**y;
+                document.getElementById("result").innerHTML=result;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>This is a calculator made by Vincent.</h1>
+        <p class="nav">
+            <a href="index.html">Home</a>|
+            <a href="calculator.html">Calculator</a>|
+            <a href="progamming.html">Programming</a>|
+        </p>
+        <p>
+            <button type="button" onclick="Add()">Add</button>
+            <button type="button" onclick="Subtract()">Subtract</button>
+            <button type="button" onclick="Divide()">Divide</button>
+            <button type="button" onclick="Multiply()">Multiply</button>
+            <button type="button" onclsick="Power()">Power</button>
+        </p>
+        <p>
+            <label for="x">x:</label>
+            <input type="text" id="x" name="x">
+            <label for="y">y:</label>
+            <input type="text" id="y" name="y">
+        </p>
+        <p>
+            result: <div id="result">
+                
+            </div>
+        </p>
+    </body>
+</html>
