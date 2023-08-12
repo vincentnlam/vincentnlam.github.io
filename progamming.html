@@ -73,10 +73,19 @@
                     for (let j=5; j>=0; j--){
                         output += "i="+ i + "; j= " + j
                         output += "<br/>---------<br/>" 
-                    }
-                          
+                    }         
                 }
                 document.getElementById("Test_Loop").innerHTML=output;  
+            }
+            function PrintTriangle3(){
+                let output = ""
+                for (let i=0; i<=5; i++) {
+                    for (let j=0; j<=i; j++) {
+                        output  +=  "*"
+                    }
+                    output += "<br/>"       
+                }
+                document.getElementById("Test_Loop").innerHTML=output;    
             }
         </script>
     </head>
@@ -96,6 +105,7 @@
             <button type="button" onclick="PrintNumbersWithWhile()">PrintNumbersWithWhile</button>
             <button type="button" onclick="PrintStarsWithWhile()">PrintStarsWithWhile</button>
             <button type="button" onclick="PrintIandJ()">PrintIandJ</button>
+            <button type="button" onclick="PrintTriangle3()">PrintTriangle3</button>
         </p>
         <p>
             <div id="Test_Loop"></div>
