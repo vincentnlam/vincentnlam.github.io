@@ -104,17 +104,22 @@
                 }
                 document.getElementById("result").innerHTML=result;
             }
+            function getRandomInt(max) {
+                return Math.floor(Math.random() * max);
+            }
             function lottery(){
                 let a = document.getElementById("x").value;
                 x = Number(a)
                 let b = document.getElementById("y").value;
                 y = Number(b)
                 let result = ""
-                if (x== 9 && y == 4){
+                winning_number1 = getRandomInt (100)
+                winning_number2 = getRandomInt (100)
+                if (x== winning_number1 && y == winning_number2){
                     result = "you won the lottery!"
                 }
                 else{
-                    result = "sorry you lost"
+                    result = "sorry you lost. the winning numbers are " + winning_number1 + " and " + winning_number2
                 }
                 document.getElementById("result").innerHTML=result;
             }
