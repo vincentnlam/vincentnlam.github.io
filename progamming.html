@@ -87,6 +87,37 @@
                 }
                 document.getElementById("Test_Loop").innerHTML=output;    
             }
+            function checkEvenAndOdd(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = ""
+                if ((x%2) == 0 &&((y%2) == 0)){
+                    result = "X and Y are even numbers"
+                }
+                else if ((x%2) == 0 ||((y%2) == 0)){
+                    result = "x or y is even"
+                }
+                else {
+                    result = "X and Y are not even numbers"
+                }
+                document.getElementById("result").innerHTML=result;
+            }
+            function lottery(){
+                let a = document.getElementById("x").value;
+                x = Number(a)
+                let b = document.getElementById("y").value;
+                y = Number(b)
+                let result = ""
+                if (x== 9 && y == 4){
+                    result = "you won the lottery!"
+                }
+                else{
+                    result = "sorry you lost"
+                }
+                document.getElementById("result").innerHTML=result;
+            }
         </script>
     </head>
     <body>
@@ -109,6 +140,17 @@
         </p>
         <p>
             <div id="Test_Loop"></div>
+        </p>
+        <p>
+            <label for="x">x:</label>
+            <input type="text" id="x" name="x">
+            <label for="y">y:</label>
+            <input type="text" id="y" name="y">
+        </p>
+        result: <div id="result"></div>
+        <p>
+            <button type="button" onclick="checkEvenAndOdd()">checkEvenAndOdd</button>
+            <button type="button" onclick="lottery()">lottery</button>
         </p>
     </body>
 </html>
