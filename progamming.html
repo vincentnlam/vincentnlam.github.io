@@ -113,10 +113,16 @@
                 let b = document.getElementById("y").value;
                 y = Number(b)
                 let result = ""
-                winning_number1 = getRandomInt (100)
-                winning_number2 = getRandomInt (100)
-                if (x== winning_number1 && y == winning_number2){
+                winning_number1 = Math.floor(Math.random() * 10);  // Returns a random integer from 0 to 9:
+                winning_number2 = Math.floor(Math.random() * 10);  // Returns a random integer from 0 to 9:
+                if ((x== winning_number1 && y == winning_number2)||(x== winning_number2 && y== winning_number1)){
                     result = "you won the lottery!"
+                }
+                else if (x== winning_number1||x==winning_number2){
+                    result = "you matched one number! The winning numbers are " + winning_number1 + " and " + winning_number2
+                }
+                else if (y== winning_number1||y==winning_number2){
+                    result = "you matched one number! The winning numbers are " + winning_number1 + " and " + winning_number2
                 }
                 else{
                     result = "sorry you lost. the winning numbers are " + winning_number1 + " and " + winning_number2
@@ -145,6 +151,9 @@
         </p>
         <p>
             <div id="Test_Loop"></div>
+        </p>
+        <p>
+            Enter a number between 0 and 9 for x and y.
         </p>
         <p>
             <label for="x">x:</label>
